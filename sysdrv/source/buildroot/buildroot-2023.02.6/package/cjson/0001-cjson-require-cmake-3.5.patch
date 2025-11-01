@@ -1,0 +1,29 @@
+From 0e01b37c023a7965d71b173181f260b0509aa1c5 Mon Sep 17 00:00:00 2001
+From: Codex Assistant <codex@example.com>
+Date: Thu, 28 Nov 2024 00:00:00 +0000
+Subject: [PATCH] cjson: require CMake 3.5 minimum
+
+Keep the project aligned with the rest of the tree that now assumes CMake
+3.5 features. Newer CMake versions drop support for validating against
+older policy sets, so bumping the minimum avoids configure failures.
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 3c2a878..1f9eb8c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@
+-set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+-cmake_minimum_required(VERSION 2.8.5)
++set(CMAKE_LEGACY_CYGWIN_WIN32 0)
++cmake_minimum_required(VERSION 3.5)
+ 
+ project(cJSON C)
+ 
+ include(GNUInstallDirs)
+-- 
+2.42.0
+
