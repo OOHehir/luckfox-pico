@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.5)
 
 if (EXISTS ${BUILD_TOOLCHAINS_PATH})
     message("load ${BUILD_TOOLCHAINS_PATH}")
@@ -35,4 +35,3 @@ endif()
 string(REPLACE "-DANDROID" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
 add_subdirectory(src)
-

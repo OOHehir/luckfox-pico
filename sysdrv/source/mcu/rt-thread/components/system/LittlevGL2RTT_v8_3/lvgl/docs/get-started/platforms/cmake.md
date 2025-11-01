@@ -17,7 +17,7 @@ On top of the preconfigured targets you can also use "plain" CMake to integrate 
 There are many ways to include external CMake projects into your own. A modern one also used in this example is the CMake [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html) module. This module conveniently allows us to download dependencies directly at configure time from e.g. [GitHub](https://github.com/). Here is an example how we might include LVGL into our own project.
 
 ```cmake
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.5)
 include(FetchContent)
 
 project(MyProject LANGUAGES C CXX)

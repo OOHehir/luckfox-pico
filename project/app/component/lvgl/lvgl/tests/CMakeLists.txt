@@ -6,7 +6,7 @@ if(ESP_PLATFORM)
 
 else()
 
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.5)
 project(lvgl_tests LANGUAGES C)
 
 include(CTest)
@@ -97,7 +97,7 @@ set(LVGL_TEST_OPTIONS_16BIT
 
 set(LVGL_TEST_OPTIONS_16BIT_SWAP
     -DLV_COLOR_DEPTH=16
-    -DLV_COLOR_16_SWAP=1  
+    -DLV_COLOR_16_SWAP=1
     -DLV_MEM_SIZE=65536
     -DLV_DPI_DEF=40
     -DLV_DRAW_COMPLEX=1
@@ -123,7 +123,7 @@ set(LVGL_TEST_OPTIONS_16BIT_SWAP
     -DLV_USE_GIF=1
     -DLV_USE_QRCODE=1
 )
-  
+
 set(LVGL_TEST_OPTIONS_FULL_32BIT
     -DLV_COLOR_DEPTH=32
     -DLV_MEM_SIZE=8388608
@@ -181,8 +181,8 @@ set(LVGL_TEST_OPTIONS_FULL_32BIT
     ${LVGL_TEST_COMMON_EXAMPLE_OPTIONS}
     -DLV_FONT_DEFAULT=&lv_font_montserrat_24
     -DLV_USE_FS_STDIO=1
-    -DLV_FS_STDIO_LETTER='A' 
-    -DLV_USE_FS_POSIX=1 
+    -DLV_FS_STDIO_LETTER='A'
+    -DLV_USE_FS_POSIX=1
     -DLV_FS_POSIX_LETTER='B'
     -DLV_USE_PNG=1
     -DLV_USE_BMP=1
@@ -190,7 +190,7 @@ set(LVGL_TEST_OPTIONS_FULL_32BIT
     -DLV_USE_GIF=1
     -DLV_USE_QRCODE=1
 )
-  
+
 set(LVGL_TEST_OPTIONS_TEST_COMMON
     --coverage
     -DLV_COLOR_DEPTH=32
@@ -274,7 +274,7 @@ set(COMPILE_OPTIONS
     -pedantic-errors
     -Wall
     -Wclobbered
-    -Wdeprecated 
+    -Wdeprecated
     -Wdouble-promotion
     -Wempty-body
     -Werror
@@ -359,7 +359,7 @@ foreach( test_case_fname ${TEST_CASE_FILES} )
     target_compile_options(${test_name} PUBLIC ${LVGL_TESTFILE_COMPILE_OPTIONS})
 
     add_test(
-        NAME ${test_name} 
+        NAME ${test_name}
         WORKING_DIRECTORY ${LVGL_TEST_DIR}
         COMMAND ${test_name})
 endforeach( test_case_fname ${TEST_CASE_FILES} )

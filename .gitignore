@@ -8,3 +8,10 @@ project/app/wifi_app/wpa_supplicant.conf
 config/
 sysdrv/tools/board/memtester/memtester-4.6.0/
 sysdrv/tools/board/dosfstools/dosfstools-4.2/
+project/app/wifi_app/wifi/librkwifibt.so
+project/app/wifi_app/hostapd-2.6/hostapd/hostapd_cli
+project/app/wifi_app/hostapd-2.6/hostapd/hostapd
+project/app/wifi_app/wifi/librkwifibt.so
+
+# Make sure we still include this patch file
+!sysdrv/source/buildroot/buildroot-2023.02.6/package/cjson/0001-cjson-require-cmake-3.5.patch

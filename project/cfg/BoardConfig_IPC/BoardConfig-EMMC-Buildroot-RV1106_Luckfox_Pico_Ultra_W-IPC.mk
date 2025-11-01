@@ -111,8 +111,8 @@ export RK_ENABLE_WIFI=y
 export RK_ENABLE_WIFI_CHIP=AIC8800DC
 
 # config wifi ssid and passwd
-export LF_WIFI_SSID="Your wifi ssid"
-export LF_WIFI_PSK="Your wifi password"
+export LF_WIFI_SSID="Wireless_Home"
+export LF_WIFI_PSK="chiny&owenOct2006!"
 
 #################################################
 #  PRE and POST

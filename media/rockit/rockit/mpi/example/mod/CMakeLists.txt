@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 2.8.8 )
+cmake_minimum_required(VERSION 3.5)
 add_definitions(-fno-rtti)
 
 add_compile_options(-std=c++11)
@@ -224,4 +224,3 @@ install(TARGETS rk_mpi_af_test RUNTIME DESTINATION "bin")
 add_executable(rk_mpi_amix_test ${RK_MPI_TEST_AMIX_SRC} ${RK_MPI_TEST_COMMON_SRC})
 target_link_libraries(rk_mpi_amix_test ${ROCKIT_DEP_COMMON_LIBS})
 install(TARGETS rk_mpi_amix_test RUNTIME DESTINATION "bin")
-

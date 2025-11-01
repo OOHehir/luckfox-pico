@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6 )
+cmake_minimum_required(VERSION 3.5)
 PROJECT( uffs )
 
 SET(CMAKE_CXX_FLAGS_VGL "-O0 -g")
@@ -24,4 +24,3 @@ IF (UNIX)
 ENDIF()
 
 ADD_SUBDIRECTORY( src )
-

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 
 project(test_anr)
 
@@ -16,7 +16,7 @@ add_executable(${PROJECT_NAME}
 
 # add link library
 target_link_libraries(${PROJECT_NAME}
-	RKAP_Common	
+	RKAP_Common
 	RKAP_ANR
 	m)
 

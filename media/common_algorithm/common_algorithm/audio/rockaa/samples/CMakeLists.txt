@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 project(RockAA_Samples)
 
@@ -48,4 +48,3 @@ target_link_libraries(rockaa_sample_play
 install(TARGETS rockaa_sample_play
   RUNTIME DESTINATION "bin"
 )
-
