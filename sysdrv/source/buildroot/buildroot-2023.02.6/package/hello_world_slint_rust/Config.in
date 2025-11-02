@@ -1,0 +1,20 @@
+config BR2_PACKAGE_HELLO_WORLD_SLINT_RUST
+    bool "hello_world_slint_rust"
+    select BR2_PACKAGE_EUDEV
+    select BR2_PACKAGE_LIBINPUT
+    select BR2_PACKAGE_LIBXKBCOMMON
+    select BR2_PACKAGE_MESA3D
+    select BR2_PACKAGE_LIBDRM
+    help
+      A Rust + Slint GUI demo application for the Luckfox Pico Ultra BW board.
+
+      Uses the Slint backend-linuxkms-noseat with the software renderer.
+      Requires:
+        - eudev for device enumeration (/dev management)
+        - libinput for input device support
+        - libxkbcommon for keyboard mapping
+        - mesa3d (provides libgbm) for buffer management
+        - libdrm for KMS/DRM display output
+
+      The binary will be installed to /usr/bin/hello_world_slint_rust.
+
