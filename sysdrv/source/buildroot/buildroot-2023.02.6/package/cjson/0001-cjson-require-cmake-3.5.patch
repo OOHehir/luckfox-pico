@@ -15,10 +15,9 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 index 3c2a878..1f9eb8c 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@
--set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+@@ -1,2 +1,2 @@
+ set(CMAKE_LEGACY_CYGWIN_WIN32 0)
 -cmake_minimum_required(VERSION 2.8.5)
-+set(CMAKE_LEGACY_CYGWIN_WIN32 0)
 +cmake_minimum_required(VERSION 3.5)
  
  project(cJSON C)
@@ -26,4 +25,3 @@ index 3c2a878..1f9eb8c 100644
  include(GNUInstallDirs)
 -- 
 2.42.0
-
