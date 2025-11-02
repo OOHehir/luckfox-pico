@@ -97,14 +97,15 @@
 			compatible = "rockchip,drm-logo";
 			reg = <0x0 0x0>;
 		};
-		linux,cma {
-			status = "okay";
-			compatible = "shared-dma-pool";
-			inactive;
-			reusable;
-			size = <0xA00000>; //10M
-			linux,cma-default;
-		};
+    // https://wiki.luckfox.com/Luckfox-Pico-Ultra/RGB-Screen#102-device-tree-settings
+		// linux,cma {
+		//	status = "okay";
+		//	compatible = "shared-dma-pool";
+		//	inactive;
+		//	reusable;
+		//	size = <0xA00000>; //10M
+		//	linux,cma-default;
+		//};
 		mmc_ecsd: mmc@3f000 {
 			reg = <0x3f000 0x00001000>;
 		};
@@ -433,7 +434,7 @@
 };
 
 &route_rgb {
-	status = "disabled";
+	status = "okay";
 };
 
 &vop {
