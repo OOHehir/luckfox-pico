@@ -1,4 +1,4 @@
-# luckfox-pico — Owen's overlay
+# luckfox-pico — custom overlay
 
 This repo is a snapshot of the upstream [LuckFox Pico SDK](https://github.com/LuckfoxTECH/luckfox-pico) with the additions listed below. For SDK installation, board selection, and build instructions, see the [upstream README](https://github.com/LuckfoxTECH/luckfox-pico/blob/main/README.md).
 
